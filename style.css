@@ -48,3 +48,15 @@ button {
   color: #666;
   margin-top: 6px;
 }
+/* Final image layout */
+.final {
+  text-align: center;
+}
+
+.final img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 16px;
+}
