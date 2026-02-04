@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 32px 28px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 90%;
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  padding: 12px 26px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+/* Question page */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dare {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 6px;
+}
