@@ -25,6 +25,10 @@ function moveNo() {
 /* Page 3 */
 function yes() {
   app.innerHTML = `
-    <h1>YAYYY!! I LOVE YOU ❤️</h1>
+    <div class="final">
+      <h1>YAYYY!! I LOVE YOU ❤️</h1>
+      <img src="us.jpg" alt="Us together">
+    </div>
   `;
 }
+
