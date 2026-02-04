@@ -28,10 +28,12 @@ function yes() {
     <div class="final">
       <h1>YAYYY!! I LOVE YOU ❤️</h1>
       <img src="us.jpg" alt="Us together">
+      <audio id="loveSong" src="adore-you-chorus.mp3"></audio>
     </div>
   `;
 
   startHearts();
+  playMusic();
 }
 function startHearts() {
   setInterval(() => {
@@ -46,6 +48,21 @@ function startHearts() {
       heart.remove();
     }, 4000);
   }, 350);
+}
+function playMusic() {
+  const audio = document.getElementById("loveSong");
+  audio.volume = 0;
+  audio.play();
+
+  let vol = 0;
+  const fade = setInterval(() => {
+    if (vol < 0.8) {
+      vol += 0.02;
+      audio.volume = vol;
+    } else {
+      clearInterval(fade);
+    }
+  }, 200);
 }
 
 
