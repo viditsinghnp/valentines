@@ -66,5 +66,24 @@ function playMusic() {
     }
   }, 200);
 }
+function heartBurst() {
+  for (let i = 0; i < 12; i++) {
+    const heart = document.createElement("div");
+    heart.className = "burst-heart";
+    heart.textContent = "💗";
+
+    const x = Math.random() * 200 - 100;
+    const y = Math.random() * -200 - 50;
+
+    heart.style.left = "50%";
+    heart.style.top = "50%";
+    heart.style.setProperty("--x", x + "px");
+    heart.style.setProperty("--y", y + "px");
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 1000);
+  }
+}
 
 
