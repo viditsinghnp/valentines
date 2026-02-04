@@ -24,6 +24,8 @@ function moveNo() {
 
 /* Page 3 */
 function yes() {
+  heartBurst(); // 💗 burst first
+
   app.innerHTML = `
     <div class="final">
       <h1>YAYYY!! I LOVE YOU ❤️</h1>
